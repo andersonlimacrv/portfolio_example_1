@@ -1,0 +1,12 @@
+<svg width="420" height="100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Mono+One&display=swap');
+  </style>
+  <text x="0" y="60" font-family="Lobster, cursive" font-size="48" fill="white">
+    <tspan font-family="Lobster, cursive" font-weight="bold" fill="#FF6347">A</tspan>
+    <tspan font-weight="normal">nderson</tspan>
+    <tspan font-family="Lobster, cursive" font-weight="bold" fill="#FF6347">C</tspan>
+    <tspan font-family="Lobster, cursive" fill="white">arvalho</tspan>
+    <tspan font-family="Lobster, cursive" font-size="48" fill="#FF6347">.</tspan>
+  </text>
+</svg>

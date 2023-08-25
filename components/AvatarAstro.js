@@ -1,14 +1,13 @@
 // next image
 import Image from "next/image";
 
-
-const Avatar = () => {
+const AvatarAstro = () => {
     return (
         <div className='hidden xl:flex xl:max-w-none'>
             <Image
-                src={'/avatar4.png'}
-                width={1024}
-                height={1024}
+                src={'/avatar2.png'}
+                width={737}
+                height={678}
                 alt=''
                 className='translate-z-0 w-full h-full' />
         </div>
@@ -16,4 +15,4 @@ const Avatar = () => {
 
 };
 
-export default Avatar;
+export default AvatarAstro;

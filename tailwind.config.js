@@ -19,12 +19,13 @@ module.exports = {
             md: '768px',
             lg: '960px',
             xl: '1200px',
+            xxl: '1440px',
         },
         extend: {
             colors: {
                 primary: '#131424',
                 secondary: '#393A47',
-                accent: '#8F3E46',
+                accent: '#D41E3B',
             },
             backgroundImage: {
                 explosion: 'url("/bg-explosion.png")',
