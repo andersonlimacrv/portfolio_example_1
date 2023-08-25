@@ -36,7 +36,7 @@ const Home = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
+                        className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-[white]'
                     >
                         I’m a frontend developer with a particular interest in making things simple and automating daily tasks.
                         I try to keep up with security and best practices, and am always looking for new things to learn.
@@ -59,7 +59,7 @@ const Home = () => {
             {/* image */}
             <div className='w-full h-full absolute right-0 bottom-0'>
                 {/* bg img */}
-                <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 opacity-40'>
+                <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-[100%] h-[100%] absolute translate-z-0 opacity-20'>
                 </div>
                 {/* particles */}
                 <ParticlesContainer />

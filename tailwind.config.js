@@ -25,10 +25,10 @@ module.exports = {
             colors: {
                 primary: '#131424',
                 secondary: '#393A47',
-                accent: '#D41E3B',
+                accent: '#dc143c',
             },
             backgroundImage: {
-                explosion: 'url("/bg-explosion.png")',
+                explosion: 'url("/and-fire-bg.png")',
                 circles: 'url("/bg-circles.png")',
                 circleStar: 'url("/circle-star.svg")',
                 site: 'url("/site-bg.svg")',
