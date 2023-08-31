@@ -24,12 +24,42 @@
     overflow: hidden;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     #box {
         display: flex;
         justify-content: center;
         margin: 0;
-        margin-top: 50%;
+        margin-top: 10%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    #box {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        margin-top: 10%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #box {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        margin-top: 20%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    #box {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        margin-top: 30%;
         padding: 0;
     }
 }

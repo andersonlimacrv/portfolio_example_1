@@ -19,7 +19,7 @@ const Home = () => {
         <div className='h-full'>
             {/* text*/}
             <div className="w-full h-full">
-                <div className='text-center flex flex-col justify-center xl:pt-30 xl:text-right h-full container mx-auto pt-5 xxl:pt-0'>
+                <div className='text-center flex flex-col ml-auto lg:mr-[10%] xl:mr-[20%] xxl:mr-[10%] justify-center xl:pt-28 xl:text-right h-full container'>
                     {/* title */}
                     <motion.h1
                         variants={fadeIn('down', '0.2')}
@@ -37,7 +37,7 @@ const Home = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='max-w-sm xl:max-w-xl xl:mr-5 md:mx-auto mb-10 mr-10 xl:mb-16 xl:ml-auto font-medium lg:text-[20px] xl:text-[22px]">'
+                        className='max-w-sm xl:max-w-xl mx-auto mb-10 xl:mb-16 xl:ml-auto xl:mr-0 xxl:mr-0 font-medium lg:text-[20px] xl:text-[22px]">'
                     >
                         I’m a frontend developer with a particular interest in making things simple and automating daily tasks.
                         I try to keep up with security and best practices, and am always looking for new things to learn.
