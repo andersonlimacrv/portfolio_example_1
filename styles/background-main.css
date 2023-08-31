@@ -1,0 +1,35 @@
+:root {
+    --xPos: 100%;
+    --yPos: 50%;
+}
+
+.circuit {
+    position: relative;
+    /* background-color: #0F172A; */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#box {
+    width: 100%;
+    min-height: 1600px;
+    z-index: 1;
+    margin-right: 30%;
+    background: no-repeat radial-gradient(circle at var(--xPos) var(--yPos), #00ACAC 0, rgba(255, 255, 255, .1) 20%);
+    opacity: .5;
+    -webkit-mask-image: url('https://res.cloudinary.com/dhzg3horj/image/upload/v1569639659/cdn.codeomen/PCB-01_lqerr5.svg');
+    mask-image: url('https://res.cloudinary.com/dhzg3horj/image/upload/v1569639659/cdn.codeomen/PCB-01_lqerr5.svg');
+    mask-repeat: no-repeat;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    #box {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        margin-top: 50%;
+        padding: 0;
+    }
+}

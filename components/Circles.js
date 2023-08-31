@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const Circles = () => {
     return (
-        <div className='w-[300px] xl:w-[400px] absolute -right-16 -bottom-0 mix-blend-color-dodge animate-pulse duration-75 z-10'>
+        <div className='w-[250px] xl:w-[250px] absolute right-0 -bottom-0 mix-blend-multiply animate-pulse duration-75 z-10'>
             <Image
-                src="/circles.png"
+                src="/circuit_3.png"
                 width={260}
                 height={200}
                 className="w-full h-full"

@@ -102,7 +102,7 @@ import { fadeIn } from "../../variants";
 const About = () => {
     const [index, setIndex] = useState(0);
     return (
-        <div className='h-full bg-primary/30 py-32 text-center xl:text-left w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
+        <div className='h-full bg-primary/30 py-32 text-center xl:text-left w-full'>
             <Circles />
             {/*Avatar img*/}
             <motion.div

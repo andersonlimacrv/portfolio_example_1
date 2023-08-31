@@ -5,6 +5,7 @@ import Image from 'next/image';
 import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
 import Avatar from '../components/Avatar';
+import CircuitComponent from '../components/background-main';
 
 //from motion
 import { motion } from 'framer-motion';
@@ -15,10 +16,10 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
     return (
-        <div className='bg-primary/60 h-full'>
+        <div className='h-full'>
             {/* text*/}
-            <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-                <div className='text-center flex flex-col justify-center xl:pt-30 xl:text-left h-full container mx-auto pt-5 xxl:pt-0'>
+            <div className="w-full h-full">
+                <div className='text-center flex flex-col justify-center xl:pt-30 xl:text-right h-full container mx-auto pt-5 xxl:pt-0'>
                     {/* title */}
                     <motion.h1
                         variants={fadeIn('down', '0.2')}
@@ -36,13 +37,13 @@ const Home = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
+                        className='max-w-sm xl:max-w-xl xl:mr-5 md:mx-auto mb-10 mr-10 xl:mb-16 xl:ml-auto font-medium text-[20px] xl:text-[22px]">'
                     >
                         I’m a frontend developer with a particular interest in making things simple and automating daily tasks.
                         I try to keep up with security and best practices, and am always looking for new things to learn.
                     </motion.p>
                     {/* btn */}
-                    <div className='flex justify-center xl:hidden relative'>
+                    <div className='flex justify-center xl:hidden relative mx-auto xl:mr-10 z-10'>
                         <ProjectsBtn />
                     </div>
                     <motion.div
@@ -50,7 +51,7 @@ const Home = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='hidden xl:flex'
+                        className='hidden xl:flex justify-end z-10 mr-40'
                     >
                         <ProjectsBtn />
                     </motion.div>
@@ -59,10 +60,11 @@ const Home = () => {
             {/* image */}
             <div className='w-full h-full absolute right-0 bottom-0'>
                 {/* bg img */}
-                <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-[100%] h-[100%] absolute translate-z-0 opacity-20'>
+                <div className='absolute translate-z-0'>
                 </div>
                 {/* particles */}
-                <ParticlesContainer />
+                <CircuitComponent />
+                {/* <ParticlesContainer /> */}
                 {/* avatar img */}
                 <motion.div
                     variants={fadeIn('up', '0.5')}
@@ -70,7 +72,7 @@ const Home = () => {
                     animate='show'
                     exit='hidden'
                     transition={{ duration: 1, ease: 'easeInOut' }}
-                    className='w-full h-full max-w-[768px] max-h-[768px] xxl:w-full xxl:h-full absolute -bottom-32 lg:bottom-0 lg:right-[6%] xxl:right-[13%]'>
+                    className='w-full h-full max-w-[768px] max-h-[768px] xxl:w-full xxl:h-full absolute -bottom-32 lg:bottom-0 lg:left-[1%] xxl:left-[5%]'>
                     <Avatar />
                 </motion.div>
             </div>
