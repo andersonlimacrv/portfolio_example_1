@@ -115,10 +115,8 @@ const About = () => {
                 <Avatar />
             </motion.div>
             <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
-                <div>
-                    text
-                </div>
-                <div>
+                <div className='flex-1 flex flex-col justify-center'>text</div>
+                <div className='flex flex-col w-full xl:max-w-[50%] h-[480px]'>
                     <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
                         {aboutData.map((item, itemIndex) => {
                             return (
@@ -131,6 +129,25 @@ const About = () => {
                                     onClick={() => setIndex(itemIndex)}
                                 >
                                     {item.title}
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+                        {aboutData[index].info.map((item, itemIndex) => {
+                            return (
+                                <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
+                                >
+                                    {/* title */}
+                                    <div className='font-light '>{item.title}</div>
+                                    <div className='hidden md:flex'>-</div>
+                                    <div>{item.stage}</div>
+                                    <div className='flex gap-x-4'>
+                                        {/* icons */}
+                                        {item.icons?.map((icon, iconIndex) => {
+                                            return <div className='text-2xl text-white ' key={iconIndex}>{icon}</div>;
+                                        })}
+                                    </div>
                                 </div>
                             );
                         })}
