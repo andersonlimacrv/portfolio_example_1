@@ -26,18 +26,18 @@ const aboutData = [
             {
                 title: 'Web Development',
                 icons: [
-                    <FaHtml5 />,
-                    <FaCss3 />,
-                    <FaJs />,
-                    <FaReact />,
-                    <SiNextdotjs />,
-                    <SiFramer />,
-                    <FaWordpress />,
+                    <FaHtml5 key="html-icon" />,
+                    <FaCss3 key="css-icon" />,
+                    <FaJs key="js-icon" />,
+                    <FaReact key="react-icon" />,
+                    <SiNextdotjs key="next-icon" />,
+                    <SiFramer key="framer-icon" />,
+                    <FaWordpress key="wordpress-icon" />,
                 ],
             },
             {
                 title: 'UI/UX Design',
-                icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+                icons: [<FaFigma key="figma-icon" />, <SiAdobexd key="adobe-xd-icon" />, <SiAdobephotoshop key="photoshop-icon" />],
             },
         ],
     },
@@ -99,6 +99,8 @@ import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+// counter
+import CouterUp from 'react-countup'
 const About = () => {
     const [index, setIndex] = useState(0);
     return (
@@ -111,12 +113,80 @@ const About = () => {
                 opacity='0'
                 animate='show'
                 exit='hidden'
-                className='hidden xl:flex absolute bottom-0 -left-[275px] max-w-[768px] max-h-[768px] xxl:w-full xxl:h-full'>
+                className='hidden xl:flex absolute bottom-0 -left-[280px] max-w-[768px] max-h-[768px] xxl:w-full xxl:h-full -z-'>
                 <Avatar />
             </motion.div>
-            <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
-                <div className='flex-1 flex flex-col justify-center'>text</div>
-                <div className='flex flex-col w-full xl:max-w-[50%] h-[480px]'>
+            <div className='container mx-auto md:pl-40 xl:mr-auto h-full flex flex-col items-center xxl:flex-row gap-x-6'>
+                {/* text */}
+                <div className='flex-1 flex flex-col justify-center xl:max-w-[60%] text-center'>
+                    <motion.h2
+                        variants={fadeIn('right', '0.2')}
+                        initial='hidden'
+                        opacity='0'
+                        animate='show'
+                        exit='hidden'
+                        className='h2 max-w-[500px]'>Optimizing <span className='text-accent drop-shadow-3xl'>design</span> and <span className='text-accent drop-shadow-3xl'>performance</span>:</motion.h2>
+                    <motion.p
+                        variants={fadeIn('right', '0.4')}
+                        initial='hidden'
+                        opacity='0'
+                        animate='show'
+                        exit='hidden'
+                        className='max-w-[500px] mx-auto xl:mx-0 mb-3 xl:mb-12 text-2xl xl:text-4xl font-extrabold drop-shadow-5xl'
+                    >The secret key for digital success.
+                    </motion.p>
+                    {/* counters */}
+                    <motion.div
+                        variants={fadeIn('right', '0.6')}
+                        initial='hidden'
+                        opacity='0'
+                        animate='show'
+                        exit='hidden'
+                        className='flex flex-col max-w-xl xl:max-w-none mx auto ml:mx-0 mb-8'
+                    >
+                        <div className='text-white text-xl xl:text-2xl drop-shadow-2xl font-bold mb-1'
+                        >Years of Experience</div>
+                        <div className='flex flex-1 xl:gap-x-6'>
+                            {/* experience technology */}
+                            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+
+                                <div className='text-accent text-2xl xl:text-4xl font-extrabold text-shadow'>
+                                    <CouterUp start={0} end={12} duration={2} delay={1.2} /> +
+                                </div>
+                                <div className='text-white/60 text-xs uppercase tracking-wider leading-[1.4]'>
+                                    in <b>Technology</b> industries
+                                </div>
+                            </div>
+                            {/* experience eletronic */}
+                            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                                <div className='text-accent text-2xl xl:text-4xl font-extrabold'>
+                                    <CouterUp start={0} end={10} duration={2} delay={1.2} /> +
+                                </div>
+                                <div className='text-white/60 text-xs uppercase tracking-wider leading-[1.4]'>
+                                    working with <b>hardware</b> eletronic
+                                </div>
+                            </div>
+                            {/* Desenvolvimento */}
+                            <div className='relative flex-1 after:w-[1px] after:h-fullafter:absolute after:top-0 after:right-0'>
+                                <div className='text-accent text-2xl xl:text-4xl font-extrabold'>
+                                    <CouterUp start={0} end={4} duration={2} delay={1.2} /> +
+                                </div>
+                                <div className='text-white/60 text-xs uppercase tracking-wider leading-[1.4]'>
+                                    experience with development
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+                {/* info */}
+                <motion.div
+                    variants={fadeIn('left', '0.4')}
+                    initial='hidden'
+                    opacity='0'
+                    animate='show'
+                    exit='hidden'
+                    className='flex flex-col w-full xl:max-w-[50%] h-[480px]'
+                >
                     <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
                         {aboutData.map((item, itemIndex) => {
                             return (
@@ -139,20 +209,20 @@ const About = () => {
                                 <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
                                 >
                                     {/* title */}
-                                    <div className='font-light '>{item.title}</div>
+                                    <div className='font-light mb-2 md:mb-0'>{item.title}</div>
                                     <div className='hidden md:flex'>-</div>
                                     <div>{item.stage}</div>
                                     <div className='flex gap-x-4'>
                                         {/* icons */}
                                         {item.icons?.map((icon, iconIndex) => {
-                                            return <div className='text-2xl text-white ' key={iconIndex}>{icon}</div>;
+                                            return <div className='text-2xl text-white hover:scale-150 transition-all duration-300 hover:text-accent' key={iconIndex}>{icon}</div>;
                                         })}
                                     </div>
                                 </div>
                             );
                         })}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
