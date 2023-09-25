@@ -3,18 +3,36 @@ import React, { useState } from "react";
 // icons
 import {
     FaHtml5,
+    FaPython,
     FaCss3,
-    FaJs,
     FaReact,
-    FaWordpress,
     FaFigma,
+    FaBootstrap,
+    FaPhoenixFramework,
 } from "react-icons/fa";
+
+import { TbBrandThreejs } from "react-icons/tb";
 
 import {
     SiNextdotjs,
     SiFramer,
-    SiAdobexd,
-    SiAdobephotoshop,
+    SiTailwindcss,
+    SiJavascript,
+    SiTypescript,
+    SiCanva,
+    SiDjango,
+    SiFastapi,
+    SiPostgresql,
+    SiMongodb,
+    SiExpress,
+    SiNodedotjs,
+    SiHeroku,
+    SiAmazonaws,
+    SiMiro,
+    SiCplusplus,
+    SiElixir,
+    SiMqtt,
+
 } from "react-icons/si";
 
 
@@ -24,33 +42,65 @@ const aboutData = [
         title: 'skills',
         info: [
             {
-                title: 'Web Development',
+                title: 'Languages',
+                icons: [
+                    <FaPython key="python-icon" />,
+                    <SiJavascript key="js-icon" />,
+                    <SiTypescript key="typescript-icon" />,
+                    <SiCplusplus key="c++-icon" />,
+                    <SiElixir key="elixir-icon" />,
+                ],
+            },
+            {
+                title: 'Backend',
+                icons: [
+                    <SiNodedotjs key="nodejs-icon" />,
+                    <SiDjango key="django-icon" />,
+                    <SiFastapi key="fastapi-icon" />,
+                    <SiExpress key="express-icon" />,
+                    <SiPostgresql key="postgresql-icon" />,
+                    <SiMongodb key="mongodb-icon" />,
+                    <SiHeroku key="heroku-icon" />,
+                    <SiAmazonaws key="aws-icon" />,
+                    <SiMqtt key="mqtt-icon" />,
+
+                ],
+            },
+            {
+                title: 'Frontend',
                 icons: [
                     <FaHtml5 key="html-icon" />,
                     <FaCss3 key="css-icon" />,
-                    <FaJs key="js-icon" />,
                     <FaReact key="react-icon" />,
+                    <SiTailwindcss key="tailwind-icon" />,
+                    <FaBootstrap key="bootstrap-icon" />,
                     <SiNextdotjs key="next-icon" />,
                     <SiFramer key="framer-icon" />,
-                    <FaWordpress key="wordpress-icon" />,
+                    <TbBrandThreejs key="threejs-icon" />,
+                    <FaPhoenixFramework key="phoenix-icon" />,
                 ],
             },
             {
                 title: 'UI/UX Design',
-                icons: [<FaFigma key="figma-icon" />, <SiAdobexd key="adobe-xd-icon" />, <SiAdobephotoshop key="photoshop-icon" />],
+                icons: [
+                    <FaFigma key="figma-icon" />,
+                    <SiCanva key="canva-icon" />,
+                    <SiMiro key="miro-icon" />,
+                ],
             },
         ],
     },
     {
-        title: 'awards',
+        title: 'courses',
         info: [
             {
-                title: 'Webby Awards - Honoree',
-                stage: '2011 - 2012',
+                title: ' Onebitcode, Fullstack: - 2022',
+                stage: 'HTML, CSS, Bootstrap, JS, TS, React, nodeJS, mongoDB.',
+
             },
             {
-                title: 'Adobe Design Achievement Awards - Finalist',
-                stage: '2009 - 2010',
+                title: 'CC50 Harvard Brasil: - 2022',
+                stage: ' Data structure, Phyton, SQL, HTML, CSS, JavaScript ',
             },
         ],
     },
@@ -58,16 +108,16 @@ const aboutData = [
         title: 'experience',
         info: [
             {
-                title: 'UX/UI Designer - XYZ Company',
-                stage: '2012 - 2023',
+                title: 'Full-stack Software Development - Allcode',
+                stage: '2023 - Now',
             },
             {
-                title: 'Web Developer - ABC Agency',
-                stage: '2010 - 2012',
+                title: 'Full-stack Software Development - CESS',
+                stage: '2023 - Now',
             },
             {
-                title: 'Intern - DEF Corporation',
-                stage: '2008 - 2010',
+                title: 'Technical Support Analys -  Companytec',
+                stage: '2014 - 2022',
             },
         ],
     },
@@ -75,16 +125,12 @@ const aboutData = [
         title: 'credentials',
         info: [
             {
-                title: 'Web Development - ABC University, LA, CA',
-                stage: '2011',
+                title: 'B.Sc - Analysis and Systems Development - UCPEL, BR',
+                stage: '2022 - Now',
             },
             {
-                title: 'Computer Science Diploma - AV Technical Institute',
-                stage: '2009',
-            },
-            {
-                title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-                stage: '2006',
+                title: 'Electronics - Federal Institute IFSul-Riograndense, BR',
+                stage: '2007 - 2011',
             },
         ],
     },
@@ -125,14 +171,14 @@ const About = () => {
                         opacity='0'
                         animate='show'
                         exit='hidden'
-                        className='h2 max-w-[500px]'>Optimizing <span className='text-accent drop-shadow-3xl'>design</span> and <span className='text-accent drop-shadow-3xl'>performance</span>:</motion.h2>
+                        className='h2 max-w-[500px] lg:max-w-[700px] xxl:pl-5'>Optimizing <span className='text-accent drop-shadow-3xl'>design</span> and <span className='text-accent drop-shadow-3xl'>performance</span>:</motion.h2>
                     <motion.p
                         variants={fadeIn('right', '0.4')}
                         initial='hidden'
                         opacity='0'
                         animate='show'
                         exit='hidden'
-                        className='text-md max-w-[500px] mx-auto xl:mx-0 sm:mb-1 md:mb-3 xl:mb-12 md:text-2xl xl:text-4xl font-extrabold drop-shadow-5xl'
+                        className='max-w-[500px] lg:max-w-[700px] mx-auto xl:mx-0 mb-3 xl:mb-12 xl:text-4xl font-extrabold drop-shadow-5xl md:text-2xl'
                     >The secret key for digital success.
                     </motion.p>
                     {/* counters */}
@@ -142,7 +188,7 @@ const About = () => {
                         opacity='0'
                         animate='show'
                         exit='hidden'
-                        className='flex flex-col max-w-xl xl:max-w-none mx auto ml:mx-0 mb-8'
+                        className='hidden md:flex flex-col max-w-xl xl:max-w-none mx auto ml:mx-0 mb-8'
                     >
                         <div className='text-white text-md xl:text-2xl drop-shadow-2xl font-bold mb-1'
                         >Years of Experience</div>
@@ -185,7 +231,7 @@ const About = () => {
                     opacity='0'
                     animate='show'
                     exit='hidden'
-                    className='flex flex-col w-full xl:max-w-[50%] h-[480px]'
+                    className='flex flex-col w-full xl:max-w-[45%] h-[480px]'
                 >
                     <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 font-extrabold'>
                         {aboutData.map((item, itemIndex) => {
@@ -209,9 +255,9 @@ const About = () => {
                                 <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
                                 >
                                     {/* title */}
-                                    <div className='font-light mb-2 md:mb-0'>{item.title}</div>
+                                    <div className='font-bold mb-2 md:mb-0'>{item.title}</div>
                                     <div className='hidden md:flex'>-</div>
-                                    <div>{item.stage}</div>
+                                    <div className='italic'>{item.stage}</div>
                                     <div className='flex gap-x-4'>
                                         {/* icons */}
                                         {item.icons?.map((icon, iconIndex) => {
