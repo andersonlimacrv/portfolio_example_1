@@ -113,7 +113,7 @@ const About = () => {
                 opacity='0'
                 animate='show'
                 exit='hidden'
-                className='hidden xl:flex absolute bottom-0 -left-[280px] max-w-[768px] max-h-[768px] xxl:w-full xxl:h-full -z-'>
+                className='hidden xl:flex absolute bottom-0 xl:left-0 xxl:-left-[280px] max-w-[768px] max-h-[768px] xxl:w-full xxl:h-full'>
                 <Avatar />
             </motion.div>
             <div className='container mx-auto md:pl-40 xl:mr-auto h-full flex flex-col items-center xxl:flex-row gap-x-6'>
@@ -158,7 +158,7 @@ const About = () => {
                                 </div>
                             </div>
                             {/* experience eletronic */}
-                            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 p-1 xxl:pr-4'>
                                 <div className='text-accent text-2xl xl:text-4xl font-extrabold'>
                                     <CouterUp start={0} end={10} duration={2} delay={1.2} /> +
                                 </div>

@@ -72,7 +72,7 @@ const Home = () => {
                     animate='show'
                     exit='hidden'
                     transition={{ duration: 1, ease: 'easeInOut' }}
-                    className='mix-blend-color-dodge w-full h-full max-w-[768px] max-h-[768px] xxl:w-full xxl:h-full absolute -bottom-32 lg:bottom-0 lg:left-[1%] xxl:left-[5%]'>
+                    className='mix-blend-color-dodge w-full h-full max-w-[768px] max-h-[768px] xxl:w-full xxl:h-full absolute -bottom-32 lg:bottom-0 lg:left-[10%] xxl:left-[15%]'>
                     <Avatar />
                 </motion.div>
             </div>
