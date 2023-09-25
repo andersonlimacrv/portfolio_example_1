@@ -132,7 +132,7 @@ const About = () => {
                         opacity='0'
                         animate='show'
                         exit='hidden'
-                        className='max-w-[500px] mx-auto xl:mx-0 mb-3 xl:mb-12 text-2xl xl:text-4xl font-extrabold drop-shadow-5xl'
+                        className='text-md max-w-[500px] mx-auto xl:mx-0 sm:mb-1 md:mb-3 xl:mb-12 md:text-2xl xl:text-4xl font-extrabold drop-shadow-5xl'
                     >The secret key for digital success.
                     </motion.p>
                     {/* counters */}
@@ -144,7 +144,7 @@ const About = () => {
                         exit='hidden'
                         className='flex flex-col max-w-xl xl:max-w-none mx auto ml:mx-0 mb-8'
                     >
-                        <div className='text-white text-xl xl:text-2xl drop-shadow-2xl font-bold mb-1'
+                        <div className='text-white text-md xl:text-2xl drop-shadow-2xl font-bold mb-1'
                         >Years of Experience</div>
                         <div className='flex flex-1 xl:gap-x-6'>
                             {/* experience technology */}
@@ -167,7 +167,7 @@ const About = () => {
                                 </div>
                             </div>
                             {/* Desenvolvimento */}
-                            <div className='relative flex-1 after:w-[1px] after:h-fullafter:absolute after:top-0 after:right-0'>
+                            <div className='relative flex-1 after:w-[1px] after:h-full after:absolute after:top-0 after:right-0'>
                                 <div className='text-accent text-2xl xl:text-4xl font-extrabold'>
                                     <CouterUp start={0} end={4} duration={2} delay={1.2} /> +
                                 </div>
@@ -187,7 +187,7 @@ const About = () => {
                     exit='hidden'
                     className='flex flex-col w-full xl:max-w-[50%] h-[480px]'
                 >
-                    <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+                    <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 font-extrabold'>
                         {aboutData.map((item, itemIndex) => {
                             return (
                                 <div
