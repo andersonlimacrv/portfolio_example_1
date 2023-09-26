@@ -26,7 +26,7 @@ const Home = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='h1'
+                        className='h2'
                     >
                         Transforming Ideas <br /> Into {' '}
                         <span className='text-accent drop-shadow-3xl'> Digital Reality</span>
@@ -37,10 +37,9 @@ const Home = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='max-w-sm xl:max-w-xl mx-auto mb-10 xl:mb-16 xl:ml-auto xl:mr-0 xxl:mr-0 font-medium lg:text-[20px] xl:text-[22px]">'
+                        className='max-w-sm xl:max-w-xl mx-auto mb-10 xl:mb-16 xl:ml-auto xl:mr-0 font-medium lg:text-[20px] xl:text-[22px]'
                     >
-                        I’m a frontend developer with a particular interest in making things simple and automating daily tasks.
-                        I try to keep up with security and best practices, and am always looking for new things to learn.
+                        I'm a Fullstack Developer with a focus on achieving seamless integration between innovative design and high performance. I have experience in optimizing processes and building interfaces to make people's lives simpler and more enjoyable.
                     </motion.p>
                     {/* btn */}
                     <div className='flex justify-center xl:hidden relative mx-auto xl:mr-10 z-10'>
