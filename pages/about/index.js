@@ -45,7 +45,7 @@ const aboutData = [
                 title: 'Languages',
                 icons: [
                     <FaPython key="python-icon" />,
-                    <SiJavascript key="js-icon" />,
+                    <SiJavascript key="javascript-icon" />,
                     <SiTypescript key="typescript-icon" />,
                     <SiCplusplus key="c++-icon" />,
                     <SiElixir key="elixir-icon" />,
@@ -113,7 +113,7 @@ const aboutData = [
             },
             {
                 title: 'Full-stack Software Development - CESS',
-                stage: '2023 - Now',
+                stage: '2022 - Now',
             },
             {
                 title: 'Technical Support Analys -  Companytec',
@@ -252,22 +252,33 @@ const About = () => {
                     <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
                         {aboutData[index].info.map((item, itemIndex) => {
                             return (
-                                <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
-                                >
+                                <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
                                     {/* title */}
                                     <div className='font-bold mb-2 md:mb-0'>{item.title}</div>
                                     <div className='hidden md:flex'>-</div>
                                     <div className='italic'>{item.stage}</div>
-                                    <div className='flex gap-x-4'>
+                                    <div className='flex gap-x-4 pb-4'>
                                         {/* icons */}
                                         {item.icons?.map((icon, iconIndex) => {
-                                            return <div className='text-2xl text-white hover:scale-150 transition-all duration-300 hover:text-accent' key={iconIndex}>{icon}</div>;
+                                            // Extract the key (iconKey) from the React element (icon)
+                                            const iconKey = icon.key;
+                                            return (
+                                                <div className='relative text-2xl text-white hover:scale-150 transition-all duration-300 hover:text-accent group' key={iconKey}>
+                                                    {icon}
+
+                                                    <div className='capitalize'>
+                                                        <div className='absolute font-extrabold text-xs/[10px] hidden group-hover:flex bg-white/20 items-center p-[2px] -left-[3px] rounded-[3px]'>{iconKey.replace('-icon', '')}</div>
+                                                    </div>
+
+                                                </div>
+                                            );
                                         })}
                                     </div>
                                 </div>
                             );
                         })}
                     </div>
+
                 </motion.div>
             </div>
         </div>
