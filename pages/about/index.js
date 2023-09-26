@@ -9,6 +9,7 @@ import {
     FaFigma,
     FaBootstrap,
     FaPhoenixFramework,
+    FaCodepen,
 } from "react-icons/fa";
 
 import { TbBrandThreejs } from "react-icons/tb";
@@ -86,6 +87,7 @@ const aboutData = [
                     <FaFigma key="figma-icon" />,
                     <SiCanva key="canva-icon" />,
                     <SiMiro key="miro-icon" />,
+                    <FaCodepen key="codepen-icon" />,
                 ],
             },
         ],
@@ -249,7 +251,7 @@ const About = () => {
                             );
                         })}
                     </div>
-                    <div className='py-2 xl:py-6 flex flex-col gap-y-1 xl:gap-y-4 items-center xl:items-start'>
+                    <div className='py-2 xl:py-6 flex flex-col gap-y-1 md:gap-y-4 items-center xl:items-start'>
                         {aboutData[index].info.map((item, itemIndex) => {
                             return (
                                 <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
@@ -267,7 +269,7 @@ const About = () => {
                                                     {icon}
 
                                                     <div className='capitalize'>
-                                                        <div className='absolute font-extrabold text-xs/[10px] hidden group-hover:flex bg-white/20 items-center p-[2px] left-[-8px] top-[-18px] rounded-[3px]'>{iconKey.replace('-icon', '')}</div>
+                                                        <div className='absolute font-extrabold text-xs/[10px] hidden group-hover:flex bg-white/20 items-center p-[2px] md:left-[-8px] md:top-[-18px] rounded-[3px]'>{iconKey.replace('-icon', '')}</div>
                                                     </div>
 
                                                 </div>
