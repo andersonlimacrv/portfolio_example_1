@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 //icons 
-import { RiInstagramLine, RiMailSendLine, RiGithubLine, RiWhatsappLine, RiLinkedinFill } from 'react-icons/ri';
+import { RiInstagramLine, RiMailSendLine, RiGithubLine, RiWhatsappLine, RiLinkedinFill, RiCodepenFill } from 'react-icons/ri';
 import { BiWorld } from 'react-icons/bi';
 
 const Socials = () => {
@@ -26,6 +26,10 @@ const Socials = () => {
             <Link href={'https://www.allcode.app/'} target="_blank" className='hover:text-accent transition-all duration-300' >
                 <BiWorld />
             </Link>
+            <Link href={'https://codepen.io/andersonlimacrv/'} target="_blank" className='hover:text-accent transition-all duration-300' >
+                <RiCodepenFill />
+            </Link>
+
         </div>
     );
 };
