@@ -180,7 +180,7 @@ const About = () => {
                         opacity='0'
                         animate='show'
                         exit='hidden'
-                        className='max-w-[500px] lg:max-w-[700px] mx-auto xl:mx-0 mb-3 xl:mb-12 xl:text-4xl font-extrabold drop-shadow-5xl md:text-2xl'
+                        className='max-w-[500px] lg:max-w-[700px] mx-auto xl:mx-0 mb-2 xl:mb-12 xl:text-4xl font-extrabold drop-shadow-5xl md:text-2xl'
                     >The secret key for digital success.
                     </motion.p>
                     {/* counters */}
@@ -259,7 +259,7 @@ const About = () => {
                                     <div className='font-bold mb-0 md:mb-0 z-10'>{item.title}</div>
                                     <div className='hidden md:flex'>-</div>
                                     <div className='italic'>{item.stage}</div>
-                                    <div className='flex gap-x-4 pb-4'>
+                                    <div className='flex gap-x-4 pb-2 xxl:pb-5'>
                                         {/* icons */}
                                         {item.icons?.map((icon, iconIndex) => {
                                             // Extract the key (iconKey) from the React element (icon)

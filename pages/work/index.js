@@ -30,10 +30,10 @@ const Work = () => {
                             initial='hidden'
                             animate='show'
                             exit='hidden'
-                            className='mb-4 max-w-[400px] mx-auto lg:mx-0'
+                            className='mb-2 max-w-[500px] mx-auto lg:mx-0'
                         >
                             lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Ut enim ad minim veniam.
                         </motion.p>
                     </div>
                     <motion.div
@@ -41,7 +41,7 @@ const Work = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='w-full xl:max-w-[65%]'
+                        className='w-full h-full xl:max-w-[55%]'
                     >
                         {/* slider */}
                         <WorkSlider />
