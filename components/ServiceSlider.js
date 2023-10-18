@@ -83,8 +83,8 @@ const ServiceSlider = () => {
                             <p className='max-w-[400px] leading-normal'>{item.description}</p>
                         </div>
                         {/* Arrow */}
-                        <div className='text-accent text-3xl'>
-                            <RxArrowTopRight />
+                        <div className='text-3xl'>
+                            <RxArrowTopRight className='group-hover:rotate-45 transition-all duration-300 group-hover:text-accent' />
                         </div>
                     </div>
                 </SwiperSlide>
