@@ -1,19 +1,21 @@
 // icons
 import {
     HiHome,
-    HiUser,
-    HiViewColumns,
-    HiRectangleGroup,
     HiChatBubbleBottomCenterText,
-    HiEnvelope,
 } from 'react-icons/hi2';
+
+import { FaUserTie } from "react-icons/fa";
+import { FaComputer } from "react-icons/fa6";
+import { MdHomeRepairService } from "react-icons/md";
+import { RiMailAddFill } from "react-icons/ri";
+
 
 // nav data
 export const navData = [
     { name: 'home', path: '/', icon: <HiHome /> },
-    { name: 'about', path: '/about', icon: <HiUser /> },
-    { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-    { name: 'work', path: '/work', icon: <HiViewColumns /> },
+    { name: 'about', path: '/about', icon: <FaUserTie /> },
+    { name: 'services', path: '/services', icon: <MdHomeRepairService /> },
+    { name: 'work', path: '/work', icon: <FaComputer /> },
     {
         name: 'testimonials',
         path: '/testimonials',
@@ -22,7 +24,7 @@ export const navData = [
     {
         name: 'contact',
         path: '/contact',
-        icon: <HiEnvelope />,
+        icon: <RiMailAddFill />,
     },
 ];
 
