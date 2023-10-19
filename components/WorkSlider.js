@@ -4,27 +4,39 @@ const workSlider = {
         {
             images: [
                 {
-                    title: 'Descrição breve',
-                    tecnology: [<SiJavascript key="js-icon" />, <SiReact key="react-icon" />, <SiTailwindcss key="tailwind-icon" />, <SiFramer key="framer-icon" />, <SiThreedotjs key="three-icon" />],
+                    title: 'Personalized t-shirt generator with the help of artificial intelligence and 3d modeling.',
+                    tecnology: [<SiJavascript key="js-icon" />, <SiReact key="react-icon" />, <SiTailwindcss key="tailwind-icon" />, <SiFramer key="framer-icon" />, <SiThreedotjs key="three-icon" />, <TbBrandOpenai key="openai-icon" />],
                     codeIcon: <AiFillGithub key="github-icon" />,
                     previewIcon: <BiWorld key="world-icon" />,
                     linkCode: 'https://github.com/andersonlimacrv/3d-saas-shirt',
-                    linkPreview: '',
+                    linkPreview: 'https://chooseyourtshirt.allcode.app/',
                     path: '/project1.jpg',
                 },
                 {
                     title: 'title2',
-                    tecnology: '',
-                    path: '/thumb2.jpg',
+                    tecnology: [<FaPython key="python-icon" />, <SiDjango key="django-icon" />, <SiJavascript key="js-icon" />, <SiBootstrap key="bootstrap-icon" />, <SiHtml5 key="html-icon" />, <SiCss3 key="css-icon" />],
+                    codeIcon: <RiLock2Fill key="locked-icon" />,
+                    previewIcon: <RiLock2Fill key="locked-icon" />,
+                    linkCode: '',
+                    linkPreview: '',
+                    path: '/project2_ed.jpg',
                 },
                 {
                     title: 'title3',
-                    tecnology: '',
+                    tecnology: [<SiJavascript key="js-icon" />, <SiReact key="react-icon" />, <SiTailwindcss key="tailwind-icon" />, <SiFramer key="framer-icon" />, <SiThreedotjs key="three-icon" />],
+                    codeIcon: <AiFillGithub key="github-icon" />,
+                    previewIcon: <BiWorld key="world-icon" />,
+                    linkCode: 'https://github.com/andersonlimacrv/3d-saas-shirt',
+                    linkPreview: 'https://chooseyourtshirt.allcode.app/',
                     path: '/thumb3.jpg',
                 },
                 {
                     title: 'title4',
-                    tecnology: '',
+                    tecnology: [<SiJavascript key="js-icon" />, <SiReact key="react-icon" />, <SiTailwindcss key="tailwind-icon" />, <SiFramer key="framer-icon" />, <SiThreedotjs key="three-icon" />],
+                    codeIcon: <AiFillGithub key="github-icon" />,
+                    previewIcon: <BiWorld key="world-icon" />,
+                    linkCode: 'https://github.com/andersonlimacrv/3d-saas-shirt',
+                    linkPreview: 'https://chooseyourtshirt.allcode.app/',
                     path: '/thumb4.jpg',
                 },
             ],
@@ -33,22 +45,38 @@ const workSlider = {
             images: [
                 {
                     title: 'title5',
-                    tecnology: '',
+                    tecnology: [<SiJavascript key="js-icon" />, <SiReact key="react-icon" />, <SiTailwindcss key="tailwind-icon" />, <SiFramer key="framer-icon" />, <SiThreedotjs key="three-icon" />],
+                    codeIcon: <AiFillGithub key="github-icon" />,
+                    previewIcon: <BiWorld key="world-icon" />,
+                    linkCode: 'https://github.com/andersonlimacrv/3d-saas-shirt',
+                    linkPreview: 'https://chooseyourtshirt.allcode.app/',
                     path: '/thumb4.jpg',
                 },
                 {
                     title: 'title6',
-                    tecnology: '',
+                    tecnology: [<SiJavascript key="js-icon" />, <SiReact key="react-icon" />, <SiTailwindcss key="tailwind-icon" />, <SiFramer key="framer-icon" />, <SiThreedotjs key="three-icon" />],
+                    codeIcon: <AiFillGithub key="github-icon" />,
+                    previewIcon: <BiWorld key="world-icon" />,
+                    linkCode: 'https://github.com/andersonlimacrv/3d-saas-shirt',
+                    linkPreview: 'https://chooseyourtshirt.allcode.app/',
                     path: '/thumb1.jpg',
                 },
                 {
                     title: 'title7',
-                    tecnology: '',
+                    tecnology: [<SiJavascript key="js-icon" />, <SiReact key="react-icon" />, <SiTailwindcss key="tailwind-icon" />, <SiFramer key="framer-icon" />, <SiThreedotjs key="three-icon" />],
+                    codeIcon: <AiFillGithub key="github-icon" />,
+                    previewIcon: <BiWorld key="world-icon" />,
+                    linkCode: 'https://github.com/andersonlimacrv/3d-saas-shirt',
+                    linkPreview: 'https://chooseyourtshirt.allcode.app/',
                     path: '/thumb2.jpg',
                 },
                 {
                     title: 'title8',
-                    tecnology: '',
+                    tecnology: [<SiJavascript key="js-icon" />, <SiReact key="react-icon" />, <SiTailwindcss key="tailwind-icon" />, <SiFramer key="framer-icon" />, <SiThreedotjs key="three-icon" />],
+                    codeIcon: <AiFillGithub key="github-icon" />,
+                    previewIcon: <BiWorld key="world-icon" />,
+                    linkCode: 'https://github.com/andersonlimacrv/3d-saas-shirt',
+                    linkPreview: 'https://chooseyourtshirt.allcode.app/',
                     path: '/thumb3.jpg',
                 },
             ],
@@ -69,33 +97,25 @@ import { Autoplay, Pagination } from "swiper";
 import Image from 'next/image';
 
 // icons
-import { BsArrowRight } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
-import { RiGithubLine, RiCodepenFill } from 'react-icons/ri';
+import { RiCodepenFill, RiLock2Fill } from 'react-icons/ri';
 import { BiWorld } from 'react-icons/bi';
-import { RiLock2Fill } from 'react-icons/ri';
-
-// icons
 import {
     FaHtml5,
     FaPython,
     FaCss3,
     FaReact,
-    FaFigma,
     FaBootstrap,
     FaPhoenixFramework,
-    FaCodepen,
 } from "react-icons/fa";
 
-import { TbBrandThreejs } from "react-icons/tb";
-
+import { TbBrandOpenai } from "react-icons/tb";
 import {
     SiNextdotjs,
     SiFramer,
     SiTailwindcss,
     SiJavascript,
     SiTypescript,
-    SiCanva,
     SiDjango,
     SiFastapi,
     SiPostgresql,
@@ -104,12 +124,14 @@ import {
     SiNodedotjs,
     SiHeroku,
     SiAmazonaws,
-    SiMiro,
     SiCplusplus,
     SiElixir,
     SiMqtt,
     SiReact,
     SiThreedotjs,
+    SiBootstrap,
+    SiHtml5,
+    SiCss3,
 
 } from "react-icons/si";
 
@@ -151,22 +173,22 @@ const WorkSlider = () => {
                                             <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-5 group-hover:xl:-translate-y-10 transition-all duration-300'>
                                                 <div className='flex flex-col items gap-x-2 text-[15px]'>
                                                     {/* title part 1 */}
-                                                    <div className='delay-100 pb-2'>{image.title}</div>
+                                                    <div className='text-center delay-100 lg:pb-2 leading-[0.9] lg:leading-[1.2] px-2max-w-[320px]'>{image.title}</div>
                                                     {/* title part 2 */}
-                                                    <div className='pb-2 gap-x-2 flex items-center translate-y-[500%] group-hover:translate-y-0 transition-all delay-200 duration-300 text-[20px]'>{image.tecnology}</div>
+                                                    <div className='hidden md:flex pb-2 gap-x-2 items-center justify-center translate-y-[500%] group-hover:translate-y-0 transition-all delay-200 duration-300 text-[20px]'>{image.tecnology}</div>
                                                     {/* icon / source code */}
-                                                    <div className='text-lg translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-300'>
-                                                        <a className="text-[#272A58] hover:underline" href='{image.linkCode}' target="_blank">
-                                                            <div className='flex items-center gap-x-2 font-bold'>
+                                                    <div className='text-sm lg:text-lg translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-300'>
+                                                        <a className="text-[#272A58] hover:underline" href={image.linkCode} target="_blank">
+                                                            <div className='flex items-center gap-x-2 font-bold justify-center'>
                                                                 {image.codeIcon} Source Code
                                                             </div>
                                                         </a>
                                                     </div>
                                                     {/* icon / preview code */}
-                                                    <div className='text-lg translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-300'>
-                                                        <a className="text-[#272A58] hover:underline" href='{image.linkPreview}'>
-                                                            <div className='flex items-center gap-x-2 font-bold'>
-                                                                {image.previewIcon} Live
+                                                    <div className='text-sm lg:text-lg translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-300'>
+                                                        <a className="text-[#272A58] hover:underline" href={image.linkPreview}>
+                                                            <div className='flex items-center gap-x-2 font-bold justify-center'>
+                                                                {image.previewIcon} Live Preview
                                                             </div>
                                                         </a>
                                                     </div>
