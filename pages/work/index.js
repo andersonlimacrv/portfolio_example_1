@@ -41,7 +41,7 @@ const Work = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='w-full h-full xl:max-w-[55%]'
+                        className='w-full h-full xl:max-w-[60%]'
                     >
                         {/* slider */}
                         <WorkSlider />
