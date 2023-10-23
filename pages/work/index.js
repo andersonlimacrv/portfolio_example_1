@@ -10,12 +10,12 @@ import { fadeIn } from '../../variants';
 
 const Work = () => {
     return (
-        <div className='h-full bg-primary/30 py-36 flex items-center'>
+        <div className='h-full bg-primary/30 py-32 flex items-center'>
             <Circles />
             <div className='container mx-auto'>
                 <div className='flex flex-col xl:flex-row gap-x-8'>
                     {/* text */}
-                    <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
+                    <div className='text-center flex xl:w-[25vw] flex-col lg:text-left mb-4 xl:mb-0'>
                         <motion.h2
                             variants={fadeIn('up', '0.3')}
                             initial='hidden'
@@ -41,7 +41,7 @@ const Work = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='w-full h-full xl:max-w-[60%]'
+                        className='w-full xl:max-w-[56%]'
                     >
                         {/* slider */}
                         <WorkSlider />
